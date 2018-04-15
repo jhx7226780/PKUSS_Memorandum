@@ -1,0 +1,171 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_main"
+        android:layout_alignParentTop="true"
+
+        >
+        <TextView
+            android:id="@+id/fl_acc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#3C3C3C"
+            android:gravity="center"
+            android:text="资产"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/fl_ac_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/fl_acc"
+            android:background="@drawable/shape_1">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/u12"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="账本名称"
+                android:textSize="17sp"
+
+                android:textColor="#323332" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fl_date"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/fl_ac_name"
+            android:background="@drawable/shape_1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/data"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fl_total"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/fl_date"
+            android:background="@drawable/shape_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/shape_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mouth_out"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/shape_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mouth_in"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fl_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/fl_total"
+            android:text="记一笔" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/fl_button"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:id="@+id/fh_Acc_Writen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <Button
+                    android:id="@+id/fh_WrittenAcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:text="文字记账"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <Button
+                    android:id="@+id/fh_VoiceAcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/voice_acc"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <Button
+                    android:id="@+id/fh_LocationAcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/add_acc"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25">
+
+                <Button
+                    android:id="@+id/fh_AutoAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/auto_acc"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

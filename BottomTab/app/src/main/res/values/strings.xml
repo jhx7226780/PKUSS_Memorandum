@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BottomTab</string>
+    <string name="acc_name">《账本名称</string>
+    <string name="data">2018年4月11日</string>
+    <string name="mouth_out">本月总支出</string>
+    <string name="mouth_in">本月总收入</string>
+    <string name="note_one">记一笔</string>
+    <string name="write_acc">文字记账</string>
+    <string name="voice_acc">语音记账</string>
+    <string name="add_acc">定位记账</string>
+    <string name="auto_acc">自动记账</string>
+    <string name="access">资产</string>
+    <string name="budget">预算</string>
+    <string name="my">我的</string>
+    <string name="acc_return">《返回</string>
+    <string name="acc_in">收入</string>
+    <string name="acc_out">支出</string>
+    <string name="category">类别</string>
+    <string name="safe">保存</string>
+</resources>

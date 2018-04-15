@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skypan.bottomtab.AutoAccountActivity">
+    <FrameLayout
+        android:id="@+id/aa_Fralay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/aa_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/aa_top"
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="#d7d7d7">
+
+                <Button
+                    android:id="@+id/aa_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="返回" />
+
+
+                <RelativeLayout
+                    android:id="@+id/aa_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/aa_in"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/selector_blue"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="收入"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/aa_out"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/selector_blue"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="支出"
+                            android:textSize="15dp" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/aa_choose"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/aa_top">
+
+                <RadioGroup
+                    android:id="@+id/aa_ButtonGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/aa_Button_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_wirte"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="定额自动记账"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/aa_Button_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_wirte"
+                        android:button="@null"
+                        android:text="总额自动记账"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/aa_content"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_below="@+id/aa_choose">
+
+                <RelativeLayout
+                    android:id="@+id/aa_input_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/aa_date_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:hint="请输入入账时间"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/aa_input_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/aa_input_date"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/aa_money_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:hint="请输入入账金额"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/aa_input_long"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/aa_input_money"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/aa_long_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:hint="请输入入账时长"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/aa_input_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/aa_input_long"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/aa_type_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:hint="请选择科目类别"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/aa_input_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/aa_input_type"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/aa_account_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:hint="请选择出账账户"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/aa_input_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/aa_input_account"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/aa_more_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:hint="备注"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/aa_safe"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/aa_safe_button"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_shape"
+                    android:text="@string/safe"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

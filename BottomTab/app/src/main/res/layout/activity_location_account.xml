@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skypan.bottomtab.LocationAccountActivity">
+
+    <FrameLayout
+        android:id="@+id/la_Fralay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/la_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/la_top"
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="#d7d7d7">
+
+                <Button
+                    android:id="@+id/la_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="返回" />
+
+
+                <RelativeLayout
+                    android:id="@+id/la_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/la_in"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/selector_blue"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="收入"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/la_out"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/selector_blue"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="支出"
+                            android:textSize="15dp" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/la_type"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/la_top"
+                android:background="@drawable/shape_1">
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/la_input_money"
+                    android:src="@drawable/money" />
+
+                <EditText
+                    android:id="@+id/la_input_money"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/input_shape"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ffad33"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/la_choose"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/la_type">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/wait_to_edit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/la_content"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/la_choose">
+
+                <RelativeLayout
+                    android:id="@+id/la_input_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/la_date_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/la_date_img"
+                        android:hint="请输入日期"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/la_input_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/la_input_date"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/la_location_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/la_location_img"
+                        android:hint="请记录位置"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/la_input_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/la_input_location"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/la_more_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/la_more_img"
+                        android:hint="备注"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/la_input_payway"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/la_input_more"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/la_payway_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/categary" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/la_payway_img"
+                        android:hint="支付方式"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/la_safe"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                >
+
+                <Button
+                    android:id="@+id/la_safe_button"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_shape"
+                    android:text="@string/safe"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
